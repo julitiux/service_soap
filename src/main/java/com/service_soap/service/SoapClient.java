@@ -32,7 +32,7 @@ public class SoapClient {
         """.formatted(a, b);
 
     HttpHeaders headers = new HttpHeaders();
-    headers.setContentType(MediaType.TEXT_HTML);
+    headers.setContentType(MediaType.TEXT_XML);
     headers.add("SOAPAction", "http://tempuri.org/Add");
 
     HttpEntity<String> request = new HttpEntity<>(soapXml, headers);
